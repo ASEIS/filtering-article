@@ -1,5 +1,5 @@
 
-\section{Introduction}
+\introduction
 
 With recent advances in earthquake ground motion simulation using physics-based methods and hybrid approaches \citep[e.g.,][]{Bielak_2010_GJI, Graves_2010}, verification and validation (V\&V) of synthetics have become increasingly relevant. V\&V imply processing signals in preparation to perform qualitative and quantitative comparisons. We are particularly interested in investigating the effect that different filtering procedures and parameters can have on quantitative validations done using the goodness-of-fit (GOF) method introduced by Anderson (2004). In this method, the degree of similarity between two signals is quantified by means of a set of ten (error) metrics, labeled C1 through C10. These metrics include ground motion characterization parameters commonly used in seismology and earthquake engineering. The quantitative comparisons are projected on a 0?10 scoring scale, where a score of 10 corresponds to a perfect match. When using Anderson?s method, signal pairs are compared by component of motion and at different frequency ranges to weight the contribution of different wavelengths so that low frequencies are given more weight than high frequencies.
 
@@ -16,7 +16,7 @@ The scores of each frequency band, component, and metric are then combined to ob
 \begin{figure}
     \centering
     \includegraphics
-        [width=\columnwidth]
+        [width=\mycolumnwidth]
         {figures/pdf/figure2.pdf} 
     \caption{Variation of PGA GOF scores with increasing order of FIR Chebyshev  filter for the same 336 stations used for the  validation of the Chino Hills earthquake simulation.}
 \end{figure}
@@ -28,7 +28,7 @@ In turn, the IIR filter does not have a perfect match within the passband, but i
 \begin{figure}[t]
     \centering
     \includegraphics
-        [width=\columnwidth]
+        [width=\mycolumnwidth]
         {figures/pdf/figure3.pdf} 
     \caption{Comparison between FIR and IIR filters. Top: amplitude response (dB) of the bandpass filters' design in normalized frequency for corner frequencies equal to 0.1 and 0.3 of the maximum frequency. Bottom: detail of a Fourier amplitude spectra around the upper cutoff frequency of a signal filtered with both IIR and FIR filters (the original signal is also included).}
 \end{figure}

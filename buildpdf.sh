@@ -1,5 +1,5 @@
 
-MAIN=main
+MAIN=$1
 FINAL=filtering-draft
 
 pdflatex ${MAIN}.tex
