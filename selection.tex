@@ -1,0 +1,13 @@
+
+\section{Filter selection}
+
+We did a test on one of waveforms for different kind of filters, filtering order (low and high pass), and bandwidth. Even though the optimization algorithm can find the best solution at very early iterations, We deactivate all termination criteria except the iteration to have  common sense of evaluation of all procedures. It is easily seen that elliptic filter both for highpass then lowpass and vice versa gives the best results. Figure 8 shows the results. Butterworth filter gives very close score to elliptic bandpass filter at [0.05,0.25] band, because according to evaluation method there isn?t enough frequency out of band to evaluate. 
+
+\begin{figure*}
+\centering
+    \includegraphics
+        [width=\columnwidth]
+    	{figures/pdf/figure9.pdf} 
+    \caption{Variation of the best score in 50 iterations.}
+\end{figure*}
+
